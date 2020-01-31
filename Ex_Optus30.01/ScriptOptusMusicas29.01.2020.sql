@@ -1,6 +1,6 @@
-CREATE DATABASE Optus;
+CREATE DATABASE OptusM;
 
-USE Optus;
+USE OptusM;
 
 CREATE TABLE TipoUsuario(
 IdTipoUsuario INT PRIMARY KEY IDENTITY,
@@ -18,6 +18,8 @@ IdArtista INT PRIMARY KEY IDENTITY,
 Nome VARCHAR(255) NOT NULL
 );
 
+
+
 CREATE TABLE Estilos(
 IdEstilo INT PRIMARY KEY IDENTITY,
 Nome VARCHAR(255) NOT NULL
@@ -26,13 +28,14 @@ Nome VARCHAR(255) NOT NULL
 CREATE TABLE Albuns(
 IdAlbum INT PRIMARY KEY IDENTITY,
 Nome VARCHAR(255) NOT NULL,
-DataLancamento DateTime NOT NULL,
+DataLancamento Date NOT NULL,
 QtdMinutos FLOAT NOT NULL,
-Visualizacao BIT NOT NULL,
+Visualizacao INT NOT NULL,
 IdArtista INT FOREIGN KEY REFERENCES Artistas(IdArtista) NOT NULL,
 IdEstilo INT FOREIGN KEY REFERENCES Estilos(IdEstilo) NOT NULL
 );
 
+-- 1. INSERIR NO MÍNIMO 5 DADOS EM CADA TABELA
 INSERT INTO TipoUsuario(Titulo)
 VALUES ('1'),
 	   ('2'),
@@ -65,15 +68,40 @@ VALUES ('Rock'),
 	   ('Eletrônica');
 
 INSERT INTO Albuns(Nome, DataLancamento, QtdMinutos,Visualizacao,IdArtista, IdEstilo)
-VALUES	('Rebirth',2001-01-01,30.40,0,3,1),
-		('Angels Cry',1993-01-01,20.15,0,3,1),
-		('Temple of Shadows',2004-01-01,5.00,1,3,1),
-		('Omni',2018-01-01,30.10,1,3,1),
-		('Holy Land',1996-01-01,18.14,0,3,1);
+VALUES	('Rebirth','01/01/2001',30.40,0,3,1),
+		('Angels Cry','01/01/1993',20.15,0,3,1),
+		('Temple of Shadows','01/01/2004',5.00,1,3,1),
+		('Omni','01/01/2018',30.10,1,3,1),
+		('Holy Land','01/01/1996',18.14,0,3,1);
 
+-- 2. ALTERAR O NOME DE UM ARTISTA
+UPDATE Artistas
+SET Nome = 'Gusttavo Lima e Você'
+WHERE Nome = 'Gusttavo Lima'
+
+-- 3. ALTERAR UM TIPO DE USUÁRIO
+UPDATE TipoUsuario
+SET Titulo = 'administrador'
+WHERE Titulo = '1';
+
+-- 4. ALTERAR A QUANTIDADE DE VISUALIZAÇÃO DE UM ALBUM
+UPDATE Albuns 
+SET Visualizacao = 80001
+WHERE Visualizacao = 0;
+
+UPDATE Albuns 
+SET Visualizacao = 9000
+WHERE IdAlbum = 1;
+
+-- 5.APAGAR UM ÁLBUM
+DELETE Albuns
+WHERE IdAlbum = 5;
+
+-- DQL
 SELECT * FROM TipoUsuario;
 SELECT * FROM Usuarios;
-
 SELECT * FROM Artistas;
 SELECT * FROM Albuns;
 SELECT * FROM Estilos;
+
+
