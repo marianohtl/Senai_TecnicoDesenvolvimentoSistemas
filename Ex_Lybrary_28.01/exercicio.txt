@@ -1,0 +1,5 @@
+1 - Criar banco conforme modelo lógico.
+2 - Inserir 5 dados em cada tabela.
+3 - Alterar o nome de um gênero.
+4 - Alterar o gênero de um livro.
+5 - Apagar um autor.
