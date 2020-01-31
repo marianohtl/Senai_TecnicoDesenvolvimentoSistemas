@@ -1,0 +1,35 @@
+A Optus é uma empresa no ramo musical que deseja realizar o gerenciamento dos lançamentos de novos cds de seus artistas. Cada álbum lançado poderá conter mais de um estilo vinculado (ex.: Indie e Folk).
+É importante que também você crie uma estratégia para que os usuários possuam acesso à plataforma.
+Os usuários deverão conter nome, email, senha e o tipo de permissão (eles podem ser do tipo administrador ou comum).
+Deverão ser feitos a modelagem no excel, bem como sua representação no modelo lógico e conceitual.
+
+Observações:
+Os Artistas deverão possuir somente nome.
+Estilos: nome.
+Albuns: Nome, data de lançamento, localizacao, quantidade de minutos, se o álbum está ativo para visualização, 
+a quem pertence (somente um artista por álbum) e 
+quais os estilos vinculados.
+- - - 
+
+Você deverá construir a modelagem para que seja cadastrado os estilos musicais de determinados artistas. Lembre-se de que cada artista poderá ter somente um estilo musical vinculado.
+
+DDL
+- Crie as tabelas de acordo com a modelagem proposta na pasta - sstop
+
+DML 
+- Inserir os estilos Rock'n Roll, Metal, MPB e mais 5 a sua escolha
+- Inserir os artistas Legião Urbana como Rock'n Roll, Metallica como Metal e mais 7 artistas a sua escolha
+- Alterar o estilo do artista Legião Urbana de Rock'n'Roll para MPB;
+- Deletar todos os estilos aonde o estilo da banda seja igual a Metal.
+
+DQL
+- Selecionar todos os registros da tabela de artista;
+- Selecionar todos os registros da tabela de estilos;
+- Selecionar todos os registros da tabela de artistas e seus respectivo estilos;
+
+Desafios Extras
+- Alterar a tabela de artistas, para que adicione uma coluna de data de criação da banda;
+- Alterar a tabela de estilos, para que adicione uma coluna de descrição do estilo. Para contar sobre a sua origem e que seja um espaço maior do que 255 caracteres. Seja do tipo texto longo;
+- Alterar a tabela de artistas, para que adicione uma coluna para saber se o artista ainda faz parte do cenário musical;
+- Selecionar quantos artistas eu tenho na tabela;
+- Selecionar quantos artistas do estilo de Rock possuem na tabela;
