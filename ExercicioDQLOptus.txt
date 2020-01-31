@@ -1,0 +1,4 @@
+- selecionar os álbuns do mesmo artista
+- selecionar os álbuns lançados na mesma data
+- selecionar os artistas do mesmo estilo musical
+- selecionar álbuns e artistas e ordenar a data de lançamento da mais recentes para o mais antigo
