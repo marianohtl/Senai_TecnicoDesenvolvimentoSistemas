@@ -1,0 +1,11 @@
+Exercícios Baseados em DML
+1.INSERIR NO MÍNIMO 5 DADOS EM CADA TABELA
+2.ALTERAR O NOME DE UM ARTISTA
+3.ALTERAR UM TIPO DE USUÁRIO
+4.ALTERAR A QUANTIDADE DE VISUALIZAÇÃO DE UM ALBUM
+5.APAGAR UM ÁLBUM
+DQL
+-- 1. Selecionar os álbuns do mesmo artista.
+-- 2. Selecionar os álbuns lançados na mesma data
+-- 3. Selecionar os artistas do mesmo estilo musical
+-- 4. Selecionar álbuns e artistas e ordenar a data de lançamento da mais recentes para o mais antiga

@@ -1,5 +1,13 @@
-1 - Criar banco conforme modelo lógico.
-2 - Inserir 5 dados em cada tabela.
-3 - Alterar o nome de um gênero.
-4 - Alterar o gênero de um livro.
-5 - Apagar um autor.
+•Criar banco conforme modelo lógico.
+DML 
+•Inserir no mínimo 5 dados em cada tabela
+•Alterar Nome de um Gênero
+•Alterar Gênero de um Livro
+•Apagar um Autor
+DQL
+•Selecionar todos os autores;
+•Selecionar todos os gêneros;
+•Selecionar todos os livros;
+•Selecionar todos os livros e seus respectivos autores;
+•Selecionar todos os livros e seus respectivos gêneros;
+•Selecionar todos os livros e seus respectivos autores e gêneros;
