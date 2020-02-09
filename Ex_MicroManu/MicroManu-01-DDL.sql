@@ -1,0 +1,60 @@
+CREATE DATABASE MicroManu
+
+GO
+
+USE MicroManu
+
+GO
+
+CREATE TABLE Clientes(
+IdCliente INT PRIMARY KEY IDENTITY,
+Nome VARCHAR(255) NOT NULL
+);
+
+
+GO
+
+CREATE TABLE Itens(
+IdItem INT PRIMARY KEY IDENTITY,
+Descricao VARCHAR(255) NOT NULL
+);
+
+
+GO
+
+CREATE TABLE Colaboradores(
+IdColaborador INT PRIMARY KEY IDENTITY,
+Nome VARCHAR(255) NOT NULL,
+Salario DECIMAL
+);
+
+
+GO
+
+CREATE TABLE TiposConsertos(
+IdTipo INT PRIMARY KEY IDENTITY,
+Descricao VARCHAR(255) NOT NULL
+);
+
+
+GO
+
+CREATE TABLE Pedidos(
+IdPedido INT PRIMARY KEY IDENTITY,
+NumeroEquipamento VARCHAR(60) NOT NULL,
+Entrada Date NOT NULL,
+Saida Date,
+IdCliente INT FOREIGN KEY REFERENCES Clientes(IdCliente),
+IdItem INT FOREIGN KEY REFERENCES Itens(IdItem),
+IdTipo INT FOREIGN KEY REFERENCES TiposConsertos(IdTipo));
+
+
+GO
+
+CREATE TABLE PedidosColaboradores(
+IdPedido INT NOT NULL,
+IdColaborador INT NOT NULL
+);
+
+
+GO

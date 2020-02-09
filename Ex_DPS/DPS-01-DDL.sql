@@ -1,0 +1,40 @@
+CREATE DATABASE DPS
+
+GO 
+
+USE DPS;
+
+GO
+
+
+
+CREATE TABLE Departamentos(
+IdDepartamento INT PRIMARY KEY IDENTITY,
+Nome VARCHAR(100) NOT NULL,
+);
+GO
+
+
+CREATE TABLE Habilidades(
+IdHabilidade INT PRIMARY KEY IDENTITY,
+Nome VARCHAR(100) NOT NULL
+);
+GO
+
+
+CREATE TABLE Funcionarios(
+IdFuncionario INT PRIMARY KEY IDENTITY,
+Nome VARCHAR(255) NOT NULL,
+CPF VARCHAR(14) NOT NULL,
+Salario DECIMAL,
+IdDepartamento INT FOREIGN KEY REFERENCES Departamentos(IdDepartamento)
+);
+GO
+
+
+CREATE TABLE FuncionariosHabilidades(
+IdFuncionariosHabilidades INT PRIMARY KEY IDENTITY,
+IdFuncionario INT NOT NULL,
+IdHabilidade INT NOT NULL 
+);
+GO
