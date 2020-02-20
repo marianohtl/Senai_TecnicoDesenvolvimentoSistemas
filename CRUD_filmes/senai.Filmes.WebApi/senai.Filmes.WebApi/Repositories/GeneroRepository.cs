@@ -27,6 +27,7 @@ namespace senai.Filmes.WebApi.Repositories
         /// Atualiza um gênero passando o ID pelo corpo da requisição
         /// </summary>
         /// <param name="genero">Objeto gênero que será atualizado</param>
+        
         public void AtualizarIdCorpo(GeneroDomain genero)
         {
             // Declara a conexão passando a string de conexão

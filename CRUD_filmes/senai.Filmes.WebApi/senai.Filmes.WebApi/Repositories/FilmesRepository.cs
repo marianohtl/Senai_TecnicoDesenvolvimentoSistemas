@@ -38,7 +38,7 @@ namespace senai.Filmes.WebApi.Repositories
 
                         lista.Add(filme);
                     }
-            return lista;
+                    return lista;
                 }
             }
         }
@@ -55,9 +55,10 @@ namespace senai.Filmes.WebApi.Repositories
 
                 SqlDataReader rdr;
 
-                using (SqlCommand cmd = new SqlCommand(queryBuscarUm, con)) {
+                using (SqlCommand cmd = new SqlCommand(queryBuscarUm, con))
+                {
 
-                    cmd.Parameters.AddWithValue("@ID",id);
+                    cmd.Parameters.AddWithValue("@ID", id);
 
                     rdr = cmd.ExecuteReader();
 
@@ -79,7 +80,8 @@ namespace senai.Filmes.WebApi.Repositories
 
         public void CadastrarFilme(FilmeDomain filme)
         {
-            using (SqlConnection con = new SqlConnection(stringConexao)) {
+            using (SqlConnection con = new SqlConnection(stringConexao))
+            {
 
                 string queryCadastro = "INSERT INTO Filmes(Titulo,IdGenero) VALUES (@Titulo, @ID)";
 
@@ -94,9 +96,76 @@ namespace senai.Filmes.WebApi.Repositories
             }
         }
 
-        public void AtualizarFilme(FilmeDomain filmes)
+        public void AtualizarFilme(int id, FilmeDomain filme)
         {
+            using (SqlConnection con = new SqlConnection(stringConexao))
+            {
 
+                string queryAtualizar = "UPDATE Filmes SET Titulo=@Titulo WHERE IdFilme=@ID";
+
+                using (SqlCommand cmd = new SqlCommand(queryAtualizar, con))
+                {
+
+                    cmd.Parameters.AddWithValue("@ID", id);
+                    cmd.Parameters.AddWithValue("@Titulo", filme.Titulo);
+
+                    con.Open();
+
+                    cmd.ExecuteNonQuery();
+
+                }
+
+            }
+        }
+
+        public void DeletarFilme(int id)
+        {
+            using (SqlConnection con = new SqlConnection(stringConexao))
+            {
+                string queryDeletar = "DELETE FROM Filmes WHERE IdFilme = @ID";
+                using (SqlCommand cmd = new SqlCommand(queryDeletar, con))
+                {
+                    cmd.Parameters.AddWithValue("@ID", id);
+
+                    con.Open();
+
+                    cmd.ExecuteNonQuery();
+                }
+            }
+        }
+
+        public List<FilmeDomain> ListarFilmeComGenero()
+        {
+            using (SqlConnection con = new SqlConnection(stringConexao))
+            {
+                List<FilmeDomain> lista = new List<FilmeDomain>();
+
+                string queryBuscar = "SELECT Filmes.Titulo, Generos.Nome FROM Filmes INNER JOIN Generos ON Filmes.IdGenero = Generos.IdGenero";
+                con.Open();
+
+                SqlDataReader rdr;
+
+                using (SqlCommand cmd = new SqlCommand(queryBuscar, con))
+                {
+                    rdr = cmd.ExecuteReader();
+
+                    while (rdr.Read())
+                    {
+                        FilmeDomain filme = new FilmeDomain
+                        {
+                   
+                            Titulo = rdr["Titulo"].ToString(),
+                            Genero = new GeneroDomain
+                            { 
+                                Nome = rdr[1].ToString()
+                            }
+                        };
+                    lista.Add(filme);
+                    }
+
+                }
+                return lista;
+            }
         }
     }
 }

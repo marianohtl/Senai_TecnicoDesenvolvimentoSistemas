@@ -10,12 +10,14 @@ namespace senai.Filmes.WebApi.Interfaces
     {
         List<FilmeDomain> ListarFilme();
 
+        List<FilmeDomain> ListarFilmeComGenero();
+
         FilmeDomain BuscarFilmeId(int id);
 
         void CadastrarFilme(FilmeDomain filme);
 
-        void AtualizarFilme(FilmeDomain filmes);
+        void AtualizarFilme(int id, FilmeDomain filmes);
 
-        //void DeletarFilme(int id);
+        void DeletarFilme(int id);
     }
 }
