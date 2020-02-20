@@ -4,7 +4,7 @@ USE M_Peoples;
 
 
 CREATE TABLE Funcionarios(
-IdFuncionarios INT PRIMARY KEY IDENTITY,
+IdFuncionario INT PRIMARY KEY IDENTITY,
 Nome VARCHAR(255),
 Sobrenome VARCHAR(255)
 );
