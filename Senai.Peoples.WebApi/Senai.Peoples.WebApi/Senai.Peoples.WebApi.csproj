@@ -5,6 +5,17 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <Compile Remove="Interfaces\Interfacecs.cs" />
+    <Compile Remove="Repositorys\GeneroRepository.cs" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Remove="Controllers\Novo Documento de Texto.txt" />
+    <None Remove="Interfaces\Novo Documento de Texto.txt" />
+    <None Remove="Repositorys\Novo Documento de Texto.txt" />
+  </ItemGroup>
+
+  <ItemGroup>
     <Folder Include="wwwroot\" />
   </ItemGroup>
 
