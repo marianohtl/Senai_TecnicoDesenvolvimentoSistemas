@@ -12,3 +12,17 @@ C:\Users\44125734860\Desktop\Senai_TecnicoDesenvolvimentoSistemas\Senai.Peoples.
 C:\Users\44125734860\Desktop\Senai_TecnicoDesenvolvimentoSistemas\Senai.Peoples.WebApi\Senai.Peoples.WebApi\obj\Debug\netcoreapp2.1\Senai.Peoples.WebApi.RazorTargetAssemblyInfo.cache
 C:\Users\44125734860\Desktop\Senai_TecnicoDesenvolvimentoSistemas\Senai.Peoples.WebApi\Senai.Peoples.WebApi\obj\Debug\netcoreapp2.1\Senai.Peoples.WebApi.dll
 C:\Users\44125734860\Desktop\Senai_TecnicoDesenvolvimentoSistemas\Senai.Peoples.WebApi\Senai.Peoples.WebApi\obj\Debug\netcoreapp2.1\Senai.Peoples.WebApi.pdb
+C:\Users\Thalita\Documents\ws-sincronizado\Senai_TecnicoDesenvolvimentoSistemas\Senai.Peoples.WebApi\Senai.Peoples.WebApi\bin\Debug\netcoreapp2.1\Properties\launchSettings.json
+C:\Users\Thalita\Documents\ws-sincronizado\Senai_TecnicoDesenvolvimentoSistemas\Senai.Peoples.WebApi\Senai.Peoples.WebApi\bin\Debug\netcoreapp2.1\Senai.Peoples.WebApi.deps.json
+C:\Users\Thalita\Documents\ws-sincronizado\Senai_TecnicoDesenvolvimentoSistemas\Senai.Peoples.WebApi\Senai.Peoples.WebApi\bin\Debug\netcoreapp2.1\Senai.Peoples.WebApi.runtimeconfig.json
+C:\Users\Thalita\Documents\ws-sincronizado\Senai_TecnicoDesenvolvimentoSistemas\Senai.Peoples.WebApi\Senai.Peoples.WebApi\bin\Debug\netcoreapp2.1\Senai.Peoples.WebApi.runtimeconfig.dev.json
+C:\Users\Thalita\Documents\ws-sincronizado\Senai_TecnicoDesenvolvimentoSistemas\Senai.Peoples.WebApi\Senai.Peoples.WebApi\bin\Debug\netcoreapp2.1\Senai.Peoples.WebApi.dll
+C:\Users\Thalita\Documents\ws-sincronizado\Senai_TecnicoDesenvolvimentoSistemas\Senai.Peoples.WebApi\Senai.Peoples.WebApi\bin\Debug\netcoreapp2.1\Senai.Peoples.WebApi.pdb
+C:\Users\Thalita\Documents\ws-sincronizado\Senai_TecnicoDesenvolvimentoSistemas\Senai.Peoples.WebApi\Senai.Peoples.WebApi\obj\Debug\netcoreapp2.1\Senai.Peoples.WebApi.csprojAssemblyReference.cache
+C:\Users\Thalita\Documents\ws-sincronizado\Senai_TecnicoDesenvolvimentoSistemas\Senai.Peoples.WebApi\Senai.Peoples.WebApi\obj\Debug\netcoreapp2.1\Senai.Peoples.WebApi.RazorAssemblyInfo.cache
+C:\Users\Thalita\Documents\ws-sincronizado\Senai_TecnicoDesenvolvimentoSistemas\Senai.Peoples.WebApi\Senai.Peoples.WebApi\obj\Debug\netcoreapp2.1\Senai.Peoples.WebApi.RazorAssemblyInfo.cs
+C:\Users\Thalita\Documents\ws-sincronizado\Senai_TecnicoDesenvolvimentoSistemas\Senai.Peoples.WebApi\Senai.Peoples.WebApi\obj\Debug\netcoreapp2.1\Senai.Peoples.WebApi.AssemblyInfoInputs.cache
+C:\Users\Thalita\Documents\ws-sincronizado\Senai_TecnicoDesenvolvimentoSistemas\Senai.Peoples.WebApi\Senai.Peoples.WebApi\obj\Debug\netcoreapp2.1\Senai.Peoples.WebApi.AssemblyInfo.cs
+C:\Users\Thalita\Documents\ws-sincronizado\Senai_TecnicoDesenvolvimentoSistemas\Senai.Peoples.WebApi\Senai.Peoples.WebApi\obj\Debug\netcoreapp2.1\Senai.Peoples.WebApi.RazorTargetAssemblyInfo.cache
+C:\Users\Thalita\Documents\ws-sincronizado\Senai_TecnicoDesenvolvimentoSistemas\Senai.Peoples.WebApi\Senai.Peoples.WebApi\obj\Debug\netcoreapp2.1\Senai.Peoples.WebApi.dll
+C:\Users\Thalita\Documents\ws-sincronizado\Senai_TecnicoDesenvolvimentoSistemas\Senai.Peoples.WebApi\Senai.Peoples.WebApi\obj\Debug\netcoreapp2.1\Senai.Peoples.WebApi.pdb

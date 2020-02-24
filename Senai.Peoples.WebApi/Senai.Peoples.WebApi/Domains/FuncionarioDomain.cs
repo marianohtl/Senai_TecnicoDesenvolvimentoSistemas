@@ -12,5 +12,9 @@ namespace Senai.Peoples.WebApi.Controllers
         public string Nome { get; set; }
 
         public string Sobrenome { get; set; }
+
+        public DateTime DataNascimento { get; set; }
+
+        public string NomesCompletos { get; set; }
     }
 }
