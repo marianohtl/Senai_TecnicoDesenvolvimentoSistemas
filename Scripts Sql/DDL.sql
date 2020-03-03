@@ -1,5 +1,5 @@
 CREATE DATABASE InLock_Manha;
-USE InLock;
+USE InLock_Manha;
 
 
 CREATE TABLE Estudios (IdEstudio INT IDENTITY PRIMARY KEY, NomeEstudio varchar(200))
