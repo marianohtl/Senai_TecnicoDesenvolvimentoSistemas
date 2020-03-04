@@ -13,5 +13,7 @@ namespace Senai.InLock.WebApi.Interfaces
 
         void CadastrarJogo(JogosDomain JogoDomain);
 
+        
+
     }
 }

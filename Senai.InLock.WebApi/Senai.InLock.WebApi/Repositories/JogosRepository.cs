@@ -10,7 +10,7 @@ namespace Senai.InLock.WebApi.Repositories
 {
     public class JogosRepository : IJogosRepository
     {
-        private string StringConexao = "Data Source= DEV11\\SQLEXPRESS; initial catalog=InLock_Manha; user Id=sa; pwd=sa@132;";
+       
 
         public void CadastrarJogo(JogosDomain novoJogo)
         {
@@ -38,7 +38,7 @@ namespace Senai.InLock.WebApi.Repositories
                     cmd.ExecuteNonQuery();
                 }
             }
-        }
+        }        
 
 
         public List<JogosDomain> ListarJogos()

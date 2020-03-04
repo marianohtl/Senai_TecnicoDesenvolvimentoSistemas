@@ -9,7 +9,7 @@ namespace Senai.InLock.WebApi.Repositories
     interface IEstudiosRepository
     {
 
-       void CadastrarJogo(JogosDomain JogoDomain);
+       void CadastrarEstudio(EstudiosDomain EstudioDomain);
  
     }
 }
