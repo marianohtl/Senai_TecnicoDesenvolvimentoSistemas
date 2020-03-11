@@ -41,13 +41,15 @@ namespace Senai.Senatur.WebApi.Controllers
                 _usuarioRepository = new UsuariosRepository();
             }
 
-            /// <summary>
-            /// Valida o usuário
-            /// </summary>
-            /// <param name="login">Objeto login que contém o e-mail e a senha do usuário</param>
-            /// <returns>Retorna um token com as informações do usuário</returns>
-            [HttpPost]
-            public IActionResult Post(LoginViewModel login)
+        /// <summary>
+        /// Valida o usuário
+        /// </summary>
+        /// <param name="login">Objeto login que contém o e-mail e a senha do usuário</param>
+        /// <returns>Retorna um token com as informações do usuário</returns>
+        /// <response code="200">Requisição bem sucedidada</response>
+        [HttpPost]
+        [ProducesResponseType(StatusCodes.Status200OK)]
+        public IActionResult Post(LoginViewModel login)
             {
                 // Busca o usuário pelo e-mail e senha
                 Usuarios usuarioBuscado = _usuarioRepository.BuscarPorEmailSenha(login.Email, login.Senha);

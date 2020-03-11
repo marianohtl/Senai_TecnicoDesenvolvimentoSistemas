@@ -1,4 +1,5 @@
-﻿using Microsoft.AspNetCore.Mvc;
+﻿using Microsoft.AspNetCore.Http;
+using Microsoft.AspNetCore.Mvc;
 using Senai.Senatur.WebApi.Interfaces;
 using Senai.Senatur.WebApi.Repositories;
 using System;
@@ -39,7 +40,9 @@ namespace Senai.Senatur.WebApi.Controllers
         /// Lista todos os usuários
         /// </summary>
         /// <returns>Uma lista de usuários e um status code 200 - Ok</returns>
+        /// <response code="200">Requisição bem sucedidada</response>
         [HttpGet]
+        [ProducesResponseType(StatusCodes.Status200OK)]
         public IActionResult Get()
         {
             // Retorna a resposta da requisição fazendo a chamada para o método

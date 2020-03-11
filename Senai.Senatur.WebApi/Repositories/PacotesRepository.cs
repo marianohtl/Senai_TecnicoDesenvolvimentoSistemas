@@ -45,7 +45,6 @@ namespace Senai.Senatur.WebApi.Repositories
             //Atribui novos valores aos campos existentes caso não for nulo
             if(pacoteAtualizado.NomePacote != null)
             {
-                
                 pacoteBuscado.NomePacote = pacoteAtualizado.NomePacote;
             }
             if(pacoteAtualizado.Descricao != null)

@@ -1,4 +1,5 @@
-﻿using Senai.Senatur.WebApi.Contexts;
+﻿using Microsoft.EntityFrameworkCore;
+using Senai.Senatur.WebApi.Contexts;
 using Senai.Senatur.WebApi.Domains;
 using Senai.Senatur.WebApi.Interfaces;
 using System;
@@ -31,6 +32,16 @@ namespace Senai.Senatur.WebApi.Repositories
         {
             //Retorna o primeiro pacote encontrado para o id informado
             return ctx.Usuarios.Find(Email, Senha);
+        }
+
+        /// <summary>
+        /// Lista todos os usuários com os respectivos tipos de usuários
+        /// </summary>
+        /// <returns>Uma lista de usuários com os tipos de usuários</returns>
+        public List<Usuarios> ListarTiposUsuario()
+        {
+            // Retorna uma lista de estúdios com seus jogos
+            return ctx.Usuarios.Include(e => e.TiposUsuarios).ToList();
         }
     }
 }

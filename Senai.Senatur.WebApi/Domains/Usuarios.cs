@@ -8,7 +8,7 @@ using System.Threading.Tasks;
 namespace Senai.Senatur.WebApi.Domains
 {
     [Table("Usuarios")]
-    public class Usuarios
+    public partial class Usuarios
     {
         [Key]
         [DatabaseGenerated(DatabaseGeneratedOption.Identity)]
@@ -31,6 +31,13 @@ namespace Senai.Senatur.WebApi.Domains
 
         [ForeignKey("IdTipoUsuario")]
         public TiposUsuarios TipoUsuario { get; set; }
+
+        public Usuarios()
+        {
+            TiposUsuarios = new HashSet<TiposUsuarios>();
+        }
+
+        public ICollection<TiposUsuarios> TiposUsuarios { get; set; }
 
     }
 }

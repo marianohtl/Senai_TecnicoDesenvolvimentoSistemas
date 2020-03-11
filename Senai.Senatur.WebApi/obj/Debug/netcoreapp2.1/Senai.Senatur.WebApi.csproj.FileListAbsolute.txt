@@ -12,3 +12,5 @@ C:\Back-End\Senatur.Thalita\Senai_TecnicoDesenvolvimentoSistemas\Senai.Senatur.W
 C:\Back-End\Senatur.Thalita\Senai_TecnicoDesenvolvimentoSistemas\Senai.Senatur.WebApi\obj\Debug\netcoreapp2.1\Senai.Senatur.WebApi.RazorTargetAssemblyInfo.cache
 C:\Back-End\Senatur.Thalita\Senai_TecnicoDesenvolvimentoSistemas\Senai.Senatur.WebApi\obj\Debug\netcoreapp2.1\Senai.Senatur.WebApi.dll
 C:\Back-End\Senatur.Thalita\Senai_TecnicoDesenvolvimentoSistemas\Senai.Senatur.WebApi\obj\Debug\netcoreapp2.1\Senai.Senatur.WebApi.pdb
+C:\Back-End\Senatur.Thalita\Senai_TecnicoDesenvolvimentoSistemas\Senai.Senatur.WebApi\bin\Debug\netcoreapp2.1\Senai.Senatur.WebApi.xml
+C:\Back-End\Senatur.Thalita\Senai_TecnicoDesenvolvimentoSistemas\Senai.Senatur.WebApi\obj\Debug\netcoreapp2.1\Senai.Senatur.WebApi.xml
