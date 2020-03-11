@@ -1,0 +1,12 @@
+Este documento tem por objetivo ensinar a você leitor a como criar o banco de dados a partir da solução
+Senatur:
+- Abra o Microsoft SQL Server Management Studio na sua máquina;
+- Com o SQL aberto, copie a conexão, normalmente é o nome da sua máquina seguida da versão do seu SQL Server;
+- Com a conexão copiada, abra a solução juntamente com o projeto Senatur no Visual Studio;
+- Abra a pasta Contexts e clique em SenaturContext, e cole a conexão que você copiou anteriormente dentro das aspas de Server;
+- Ainda no Visual Studio, na aba de pesquisa, digite: Console de Gerenciamento de Pacotes e clique no primeiro resultado;
+- No espaço inferior da sua tela, abrirá um espaço para que você digite na frente de PM>;
+- Digite Add-Migration NomeDaMigration(Nome de sua escolha, escreva sem espaçamento);
+- Após aparecer novamente PM> digite: Update-Database;
+- Será criada uma pasta chamada Migrations no Gerenciador de Soluções;
+- Por fim, abra novamente o SQL Server, dê o refresh na árvore e busca pelo banco de dados criado, ele terá o nome que você deu a sua Add-Migration;
