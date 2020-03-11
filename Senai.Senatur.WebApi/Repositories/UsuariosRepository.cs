@@ -31,7 +31,7 @@ namespace Senai.Senatur.WebApi.Repositories
         public Usuarios BuscarPorEmailSenha(string Email, string Senha)
         {
             //Retorna o primeiro pacote encontrado para o id informado
-            return ctx.Usuarios.Find(Email, Senha);
+            return ctx.Usuarios.FirstOrDefault(u => u.Email == Email && u.Senha == Senha);
         }
 
         /// <summary>

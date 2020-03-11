@@ -16,7 +16,7 @@ namespace Senai.Senatur.WebApi.Contexts
 
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {
-            optionsBuilder.UseSqlServer("Server=DEV15\\SQLEXPRESS; Database=Senatur_Manha;user Id=sa; pwd=sa@132;");
+            optionsBuilder.UseSqlServer("Server=DEV11\\SQLEXPRESS; Database=Senatur_Manha;user Id=sa; pwd=sa@132;");
             //optionsBuilder.UseSqlServer("Server=DESKTOP-GCOFA7F\\SQLEXPRESS; Database=InLock_Games_CodeFirst; user Id=sa; pwd=sa@132;");
             base.OnConfiguring(optionsBuilder);
 

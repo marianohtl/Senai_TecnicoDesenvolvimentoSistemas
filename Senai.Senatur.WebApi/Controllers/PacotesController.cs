@@ -22,8 +22,8 @@ namespace Senai.Senatur.WebApi.Controllers
     [Route("api/[controller]")]
 
     // Define que é um controlador de API
+    //[Authorize]
     [ApiController]
-    [Authorize]
     public class PacotesController : ControllerBase
     {
         /// <summary>
@@ -44,6 +44,7 @@ namespace Senai.Senatur.WebApi.Controllers
         /// </summary>
         /// <returns>Uma lista de pacotes e um status code 200 - Ok</returns>
         /// <response code="200">Requisição bem sucedidada</response>
+        [Authorize(Roles = "1")]
         [HttpGet]
         [ProducesResponseType(StatusCodes.Status200OK)]
         public IActionResult Get()
@@ -58,6 +59,7 @@ namespace Senai.Senatur.WebApi.Controllers
         /// <param name="id">id do pacote que será buscado</param>
         /// <returns>Um pacote buscado e um status code 200 - Ok</returns>
         /// <response code="200">Requisição bem sucedidada</response>
+        [Authorize(Roles = "1")]
         [HttpGet("{id}")]
         [ProducesResponseType(StatusCodes.Status200OK)]
         public IActionResult GetById(int id)
