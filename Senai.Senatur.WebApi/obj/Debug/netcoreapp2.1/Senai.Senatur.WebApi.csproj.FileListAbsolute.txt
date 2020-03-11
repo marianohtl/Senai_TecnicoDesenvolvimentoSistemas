@@ -1,0 +1,14 @@
+C:\Back-End\Senatur.Thalita\Senai_TecnicoDesenvolvimentoSistemas\Senai.Senatur.WebApi\bin\Debug\netcoreapp2.1\Senai.Senatur.WebApi.deps.json
+C:\Back-End\Senatur.Thalita\Senai_TecnicoDesenvolvimentoSistemas\Senai.Senatur.WebApi\bin\Debug\netcoreapp2.1\Senai.Senatur.WebApi.runtimeconfig.json
+C:\Back-End\Senatur.Thalita\Senai_TecnicoDesenvolvimentoSistemas\Senai.Senatur.WebApi\bin\Debug\netcoreapp2.1\Senai.Senatur.WebApi.runtimeconfig.dev.json
+C:\Back-End\Senatur.Thalita\Senai_TecnicoDesenvolvimentoSistemas\Senai.Senatur.WebApi\bin\Debug\netcoreapp2.1\Senai.Senatur.WebApi.dll
+C:\Back-End\Senatur.Thalita\Senai_TecnicoDesenvolvimentoSistemas\Senai.Senatur.WebApi\bin\Debug\netcoreapp2.1\Senai.Senatur.WebApi.pdb
+C:\Back-End\Senatur.Thalita\Senai_TecnicoDesenvolvimentoSistemas\Senai.Senatur.WebApi\obj\Debug\netcoreapp2.1\Senai.Senatur.WebApi.csprojAssemblyReference.cache
+C:\Back-End\Senatur.Thalita\Senai_TecnicoDesenvolvimentoSistemas\Senai.Senatur.WebApi\obj\Debug\netcoreapp2.1\Senai.Senatur.WebApi.csproj.CoreCompileInputs.cache
+C:\Back-End\Senatur.Thalita\Senai_TecnicoDesenvolvimentoSistemas\Senai.Senatur.WebApi\obj\Debug\netcoreapp2.1\Senai.Senatur.WebApi.RazorAssemblyInfo.cache
+C:\Back-End\Senatur.Thalita\Senai_TecnicoDesenvolvimentoSistemas\Senai.Senatur.WebApi\obj\Debug\netcoreapp2.1\Senai.Senatur.WebApi.RazorAssemblyInfo.cs
+C:\Back-End\Senatur.Thalita\Senai_TecnicoDesenvolvimentoSistemas\Senai.Senatur.WebApi\obj\Debug\netcoreapp2.1\Senai.Senatur.WebApi.AssemblyInfoInputs.cache
+C:\Back-End\Senatur.Thalita\Senai_TecnicoDesenvolvimentoSistemas\Senai.Senatur.WebApi\obj\Debug\netcoreapp2.1\Senai.Senatur.WebApi.AssemblyInfo.cs
+C:\Back-End\Senatur.Thalita\Senai_TecnicoDesenvolvimentoSistemas\Senai.Senatur.WebApi\obj\Debug\netcoreapp2.1\Senai.Senatur.WebApi.RazorTargetAssemblyInfo.cache
+C:\Back-End\Senatur.Thalita\Senai_TecnicoDesenvolvimentoSistemas\Senai.Senatur.WebApi\obj\Debug\netcoreapp2.1\Senai.Senatur.WebApi.dll
+C:\Back-End\Senatur.Thalita\Senai_TecnicoDesenvolvimentoSistemas\Senai.Senatur.WebApi\obj\Debug\netcoreapp2.1\Senai.Senatur.WebApi.pdb
