@@ -76,7 +76,7 @@ namespace Senai.Senatur.WebApi.Controllers
                 {
                 new Claim(JwtRegisteredClaimNames.Email, usuarioBuscado.Email),
                 new Claim(JwtRegisteredClaimNames.Jti, usuarioBuscado.IdUsuario.ToString()),
-                new Claim(ClaimTypes.Role, usuarioBuscado.TipoUsuario.ToString())
+                new Claim(ClaimTypes.Role, usuarioBuscado.Titulo.ToString())
             };
 
                 // Define a chave de acesso ao token

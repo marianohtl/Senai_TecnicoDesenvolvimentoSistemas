@@ -11591,11 +11591,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Programação\\Senai_DEV\\Senatur.WebApi.Thalita-Gabriel\\Senai_TecnicoDesenvolvimentoSistemas\\Senai.Senatur.WebApi\\Senai.Senatur.WebApi.csproj",
+      "projectUniqueName": "C:\\Programação\\Senai_DEV\\SenaturV2\\Senai_TecnicoDesenvolvimentoSistemas\\BACK-END\\Senai.Senatur.WebApi\\Senai.Senatur.WebApi.csproj",
       "projectName": "Senai.Senatur.WebApi",
-      "projectPath": "C:\\Programação\\Senai_DEV\\Senatur.WebApi.Thalita-Gabriel\\Senai_TecnicoDesenvolvimentoSistemas\\Senai.Senatur.WebApi\\Senai.Senatur.WebApi.csproj",
+      "projectPath": "C:\\Programação\\Senai_DEV\\SenaturV2\\Senai_TecnicoDesenvolvimentoSistemas\\BACK-END\\Senai.Senatur.WebApi\\Senai.Senatur.WebApi.csproj",
       "packagesPath": "C:\\Users\\souza\\.nuget\\packages\\",
-      "outputPath": "C:\\Programação\\Senai_DEV\\Senatur.WebApi.Thalita-Gabriel\\Senai_TecnicoDesenvolvimentoSistemas\\Senai.Senatur.WebApi\\obj\\",
+      "outputPath": "C:\\Programação\\Senai_DEV\\SenaturV2\\Senai_TecnicoDesenvolvimentoSistemas\\BACK-END\\Senai.Senatur.WebApi\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Microsoft\\Xamarin\\NuGet\\"
