@@ -3,7 +3,9 @@ using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
 using System.Drawing;
+using System.IO;
 using System.Linq;
+using System.Reflection;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
@@ -12,6 +14,8 @@ namespace SistemaDesktop
 {
     public partial class ListarUsers : Form
     {
+        public string pictureBox;
+        public string path;
         private Usuarios usuario = null;
         private int id;
         public ListarUsers()
@@ -67,7 +71,7 @@ namespace SistemaDesktop
         {
             UserRepository repository = new UserRepository();
             DataGridViewRow line = dgvUsuarios.Rows[e.RowIndex];
-            //line.Cells[0].Value
+
             Usuarios usuario = new Usuarios
             {
                 id = Convert.ToInt32(line.Cells[0].Value.ToString()),
@@ -79,8 +83,12 @@ namespace SistemaDesktop
                 Usuario = line.Cells[6].Value.ToString(),
                 Senha = line.Cells[7].Value.ToString(),
                 ConfirmarSenha = line.Cells[8].Value.ToString(),
+                Admin = Convert.ToBoolean(line.Cells[9].Value),
+                photo = line.Cells[10]?.Value?.ToString() ?? "D:\\workspace\\Senai_TecnicoDesenvolvimentoSistemas\\SistemaDesktop\\Resources\\User_font_awesome.svg.png"
             };
 
+            pictureBox = line.Cells[10]?.Value?.ToString() ?? "D:\\workspace\\Senai_TecnicoDesenvolvimentoSistemas\\SistemaDesktop\\Resources\\User_font_awesome.svg.png";
+           
             dgvUsuarios.DataSource = null;
             dgvUsuarios.DataSource = repository.Listar();
             
@@ -93,7 +101,7 @@ namespace SistemaDesktop
             txtUsuario.Text = usuario.Usuario;
             txtSenha.Text = usuario.Senha;
             txtConfirmarSenha.Text = usuario.ConfirmarSenha;
-            
+            pictureBox1.Image = new Bitmap(usuario.photo);
            }
 
         private void bntEditar_Click(object sender, EventArgs e)
@@ -111,7 +119,9 @@ namespace SistemaDesktop
             usuario.Senha = txtSenha.Text;
             usuario.ConfirmarSenha = txtConfirmarSenha.Text;
             usuario.Usuario = txtUsuario.Text;
-            
+            usuario.photo = pictureBox;
+
+
             repository.editar(usuario);
 
             dgvUsuarios.DataSource = null;
@@ -157,6 +167,23 @@ namespace SistemaDesktop
         private void btnVoltar_Click(object sender, EventArgs e)
         {
             this.Close();
+        }
+
+        private void btnAlterar_Click(object sender, EventArgs e)
+        {
+            OpenFileDialog opnfd = new OpenFileDialog();
+            opnfd.Filter = "Image Files (*.jpg;*.jpeg;.*.gif;)|*.jpg;*.jpeg;.*.gif";
+            if (opnfd.ShowDialog() == DialogResult.OK)
+            {
+                pictureBox1.Image = new Bitmap(opnfd.FileName);
+            }
+            string workingDirectory = Environment.CurrentDirectory;
+            string projectDirectory = Directory.GetParent(workingDirectory).Parent.FullName;
+            //path = projectDirectory + "\\img\\" + opnfd.SafeFileName;
+            //File.Copy(path, opnfd.FileName, true);
+            path = opnfd.FileName;
+            pictureBox = opnfd.FileName;
+
         }
     }
 }

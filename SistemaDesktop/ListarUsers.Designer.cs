@@ -32,7 +32,6 @@
         {
             this.dgvUsuarios = new System.Windows.Forms.DataGridView();
             this.btnAlterar = new System.Windows.Forms.Button();
-            this.btnDeletar = new System.Windows.Forms.Button();
             this.btnNovo = new System.Windows.Forms.Button();
             this.btnDeletarUser = new System.Windows.Forms.Button();
             this.btnVoltar = new System.Windows.Forms.Button();
@@ -75,21 +74,13 @@
             // 
             // btnAlterar
             // 
-            this.btnAlterar.Location = new System.Drawing.Point(755, 13);
+            this.btnAlterar.Location = new System.Drawing.Point(755, 62);
             this.btnAlterar.Name = "btnAlterar";
             this.btnAlterar.Size = new System.Drawing.Size(75, 23);
             this.btnAlterar.TabIndex = 3;
-            this.btnAlterar.Text = "Alterar";
+            this.btnAlterar.Text = "Upload";
             this.btnAlterar.UseVisualStyleBackColor = true;
-            // 
-            // btnDeletar
-            // 
-            this.btnDeletar.Location = new System.Drawing.Point(755, 62);
-            this.btnDeletar.Name = "btnDeletar";
-            this.btnDeletar.Size = new System.Drawing.Size(75, 23);
-            this.btnDeletar.TabIndex = 4;
-            this.btnDeletar.Text = "Deletar";
-            this.btnDeletar.UseVisualStyleBackColor = true;
+            this.btnAlterar.Click += new System.EventHandler(this.btnAlterar_Click);
             // 
             // btnNovo
             // 
@@ -146,71 +137,71 @@
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(35, 13);
             this.label1.TabIndex = 10;
-            this.label1.Text = "label1";
+            this.label1.Text = "Nome";
             // 
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(509, 117);
+            this.label2.Location = new System.Drawing.Point(540, 120);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(35, 13);
             this.label2.TabIndex = 11;
-            this.label2.Text = "label2";
+            this.label2.Text = "Nome";
             // 
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(509, 153);
+            this.label3.Location = new System.Drawing.Point(515, 156);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(35, 13);
+            this.label3.Size = new System.Drawing.Size(61, 13);
             this.label3.TabIndex = 12;
-            this.label3.Text = "label3";
+            this.label3.Text = "Sobrenome";
             // 
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(509, 190);
+            this.label4.Location = new System.Drawing.Point(525, 193);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(35, 13);
+            this.label4.Size = new System.Drawing.Size(53, 13);
             this.label4.TabIndex = 13;
-            this.label4.Text = "label4";
+            this.label4.Text = "Endereço";
             this.label4.Click += new System.EventHandler(this.label4_Click);
             // 
             // label5
             // 
             this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(509, 226);
+            this.label5.Location = new System.Drawing.Point(515, 225);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(35, 13);
+            this.label5.Size = new System.Drawing.Size(63, 13);
             this.label5.TabIndex = 14;
-            this.label5.Text = "label5";
+            this.label5.Text = "Nascimento";
             // 
             // label6
             // 
             this.label6.AutoSize = true;
-            this.label6.Location = new System.Drawing.Point(509, 268);
+            this.label6.Location = new System.Drawing.Point(535, 268);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(35, 13);
+            this.label6.Size = new System.Drawing.Size(43, 13);
             this.label6.TabIndex = 15;
-            this.label6.Text = "label6";
+            this.label6.Text = "Usuário";
             // 
             // label7
             // 
             this.label7.AutoSize = true;
-            this.label7.Location = new System.Drawing.Point(509, 306);
+            this.label7.Location = new System.Drawing.Point(540, 306);
             this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(35, 13);
+            this.label7.Size = new System.Drawing.Size(38, 13);
             this.label7.TabIndex = 16;
-            this.label7.Text = "label7";
+            this.label7.Text = "Senha";
             // 
             // label8
             // 
             this.label8.AutoSize = true;
-            this.label8.Location = new System.Drawing.Point(509, 342);
+            this.label8.Location = new System.Drawing.Point(495, 342);
             this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(35, 13);
+            this.label8.Size = new System.Drawing.Size(85, 13);
             this.label8.TabIndex = 17;
-            this.label8.Text = "label8";
+            this.label8.Text = "Confirmar Senha";
             // 
             // txtNome
             // 
@@ -285,6 +276,7 @@
             // 
             // pictureBox1
             // 
+            this.pictureBox1.AccessibleRole = System.Windows.Forms.AccessibleRole.None;
             this.pictureBox1.Image = global::SistemaDesktop.Properties.Resources.User_font_awesome3;
             this.pictureBox1.Location = new System.Drawing.Point(612, 13);
             this.pictureBox1.Name = "pictureBox1";
@@ -320,7 +312,6 @@
             this.Controls.Add(this.btnVoltar);
             this.Controls.Add(this.btnDeletarUser);
             this.Controls.Add(this.btnNovo);
-            this.Controls.Add(this.btnDeletar);
             this.Controls.Add(this.btnAlterar);
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.dgvUsuarios);
@@ -340,7 +331,6 @@
         public System.Windows.Forms.DataGridView dgvUsuarios;
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.Button btnAlterar;
-        private System.Windows.Forms.Button btnDeletar;
         private System.Windows.Forms.Button btnNovo;
         private System.Windows.Forms.Button btnDeletarUser;
         private System.Windows.Forms.Button btnVoltar;

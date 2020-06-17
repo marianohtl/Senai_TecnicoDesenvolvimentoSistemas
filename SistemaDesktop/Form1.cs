@@ -77,7 +77,7 @@ namespace SistemaDesktop
             Usuarios filtred = users.Find(u => u.Usuario == txt.Usuario && u.Senha == txt.Senha);
 
             // bug 
-            if (filtred.Admin != null)
+            if (filtred != null)
             {
                 if (filtred.Admin)
                 {
@@ -90,6 +90,7 @@ namespace SistemaDesktop
             }
             else
             {
+                
                 MessageBox.Show("Usuário não cadastrado!", "Desculpe");
 
             }

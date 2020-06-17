@@ -130,5 +130,8 @@
   <ItemGroup>
     <None Include="Resources\User_font_awesome.svg3.png" />
   </ItemGroup>
+  <ItemGroup>
+    <Folder Include="img\" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

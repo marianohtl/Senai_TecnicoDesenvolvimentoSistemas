@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
 using System.Drawing;
+using System.IO;
 using System.Linq;
 using System.Text;
 using System.Text.RegularExpressions;
@@ -13,7 +14,7 @@ namespace SistemaDesktop
 {
     public partial class frmCadastro : System.Windows.Forms.Form
     {
-     
+        public string path;
         public frmCadastro()
         {
             InitializeComponent();
@@ -56,7 +57,7 @@ namespace SistemaDesktop
         private void txtConfirmarSenha_TextChanged(object sender, EventArgs e)
         {
 
-            if(txtSenha.Text == txtConfirmarSenha.Text)
+            if (txtSenha.Text == txtConfirmarSenha.Text)
             {
                 lblSenhaCorresponde.Visible = false;
             }
@@ -68,43 +69,63 @@ namespace SistemaDesktop
 
         private void btnCadastrar_Click(object sender, EventArgs e)
         {
-            if(txtConfirmarSenha.Text == "" || txtSenha.Text == "" || txtUsuario.Text == "" || txtSobrenome.Text == "" || txtNome.Text == "")
+            if (txtConfirmarSenha.Text == "" || txtSenha.Text == "" || txtUsuario.Text == "" || txtSobrenome.Text == "" || txtNome.Text == "")
             {
                 MessageBox.Show("Preencha os campos obrigatórios!");
             }
-            else { 
-
-            UserRepository repository = new UserRepository();
-
-            Usuarios usuario = new Usuarios
+            else
             {
-                Nome = txtNome.Text,
-                Sobrenome = txtSobrenome.Text,
-                Endereco = txtEndereco.Text,
-                Numero = txtNumero.Text,
-                Usuario = txtUsuario.Text,
-                Nascimento = dtNascimento.Value,
-                Senha = txtSenha.Text,
-                ConfirmarSenha = txtConfirmarSenha.Text,
-                Admin = checkAdmin.Checked
-            };
+
+                UserRepository repository = new UserRepository();
+
+                Usuarios usuario = new Usuarios
+                {
+                    Nome = txtNome.Text,
+                    Sobrenome = txtSobrenome.Text,
+                    Endereco = txtEndereco.Text,
+                    Numero = txtNumero.Text,
+                    Usuario = txtUsuario.Text,
+                    Nascimento = dtNascimento.Value,
+                    Senha = txtSenha.Text,
+                    ConfirmarSenha = txtConfirmarSenha.Text,
+                    Admin = checkAdmin.Checked,
+                    photo = path
+                };
 
 
                 repository.Adicionar(usuario);
-                
+                path = null;
+
                 MessageBox.Show("Usuário Cadastrado!");
-                
+
             }
         }
 
         private void dtNascimento_ValueChanged(object sender, EventArgs e)
         {
-            
+
         }
 
         private void bntSair_Click(object sender, EventArgs e)
         {
             this.Close();
+        }
+
+        private void btnAlterar_Click(object sender, EventArgs e)
+        {
+            OpenFileDialog opnfd = new OpenFileDialog();
+            opnfd.Filter = "Image Files (*.jpg;*.jpeg;.*.gif;)|*.jpg;*.jpeg;.*.gif";
+            if (opnfd.ShowDialog() == DialogResult.OK)
+            {
+                pictureBox1.Image = new Bitmap(opnfd.FileName);
+            }
+            string workingDirectory = Environment.CurrentDirectory;
+            string projectDirectory = Directory.GetParent(workingDirectory).Parent.FullName;
+            //path = projectDirectory + "\\img\\" + opnfd.SafeFileName;
+            //File.Copy(path, opnfd.FileName, true);
+            path = opnfd.FileName;
+
+
         }
     }
 }

@@ -42,8 +42,7 @@
             this.txtSenha = new System.Windows.Forms.TextBox();
             this.txtConfirmarSenha = new System.Windows.Forms.TextBox();
             this.btnCadastrar = new System.Windows.Forms.Button();
-            this.btnAlterar = new System.Windows.Forms.Button();
-            this.btnDeletar = new System.Windows.Forms.Button();
+            this.btnUpload = new System.Windows.Forms.Button();
             this.txtSobrenome = new System.Windows.Forms.TextBox();
             this.txtNumero = new System.Windows.Forms.TextBox();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
@@ -136,7 +135,7 @@
             // checkAdmin
             // 
             this.checkAdmin.AutoSize = true;
-            this.checkAdmin.Location = new System.Drawing.Point(558, 192);
+            this.checkAdmin.Location = new System.Drawing.Point(612, 209);
             this.checkAdmin.Name = "checkAdmin";
             this.checkAdmin.Size = new System.Drawing.Size(65, 17);
             this.checkAdmin.TabIndex = 8;
@@ -192,23 +191,15 @@
             this.btnCadastrar.UseVisualStyleBackColor = true;
             this.btnCadastrar.Click += new System.EventHandler(this.btnCadastrar_Click);
             // 
-            // btnAlterar
+            // btnUpload
             // 
-            this.btnAlterar.Location = new System.Drawing.Point(533, 158);
-            this.btnAlterar.Name = "btnAlterar";
-            this.btnAlterar.Size = new System.Drawing.Size(75, 23);
-            this.btnAlterar.TabIndex = 15;
-            this.btnAlterar.Text = "Alterar";
-            this.btnAlterar.UseVisualStyleBackColor = true;
-            // 
-            // btnDeletar
-            // 
-            this.btnDeletar.Location = new System.Drawing.Point(628, 157);
-            this.btnDeletar.Name = "btnDeletar";
-            this.btnDeletar.Size = new System.Drawing.Size(75, 23);
-            this.btnDeletar.TabIndex = 16;
-            this.btnDeletar.Text = "Deletar";
-            this.btnDeletar.UseVisualStyleBackColor = true;
+            this.btnUpload.Location = new System.Drawing.Point(602, 163);
+            this.btnUpload.Name = "btnUpload";
+            this.btnUpload.Size = new System.Drawing.Size(75, 23);
+            this.btnUpload.TabIndex = 15;
+            this.btnUpload.Text = "Upload";
+            this.btnUpload.UseVisualStyleBackColor = true;
+            this.btnUpload.Click += new System.EventHandler(this.btnAlterar_Click);
             // 
             // txtSobrenome
             // 
@@ -372,8 +363,7 @@
             this.Controls.Add(this.txtNumero);
             this.Controls.Add(this.txtSobrenome);
             this.Controls.Add(this.pictureBox1);
-            this.Controls.Add(this.btnDeletar);
-            this.Controls.Add(this.btnAlterar);
+            this.Controls.Add(this.btnUpload);
             this.Controls.Add(this.btnCadastrar);
             this.Controls.Add(this.txtConfirmarSenha);
             this.Controls.Add(this.txtSenha);
@@ -414,8 +404,7 @@
         private System.Windows.Forms.TextBox txtSenha;
         private System.Windows.Forms.TextBox txtConfirmarSenha;
         private System.Windows.Forms.Button btnCadastrar;
-        private System.Windows.Forms.Button btnAlterar;
-        private System.Windows.Forms.Button btnDeletar;
+        private System.Windows.Forms.Button btnUpload;
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.TextBox txtSobrenome;
         private System.Windows.Forms.TextBox txtNumero;
