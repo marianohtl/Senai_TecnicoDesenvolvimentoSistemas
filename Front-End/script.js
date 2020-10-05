@@ -19,8 +19,10 @@ function Listar(){
                 li2.textContent = data[i].idGeneroNavigation.nome;
                 list.appendChild(li);
                 list2.appendChild(li2);
-
-            
             }
         })
+}
+
+function Update(){
+    location.reload(true);
 }
